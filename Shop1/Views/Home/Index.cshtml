@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- slider area start -->
+<div class="slider-area home2">
+    <div class="bend niceties preview-2">
+        <div id="nivoslider" class="slides">
+            <img src="~/Content/img/slider/slider-7.jpg" alt="" title="#slider-direction-1" />
+            <img src="~/Content/img/slider/slider-12.jpg" alt="" title="#slider-direction-2" />
+
+            <img src="~/Content/img/slider/slider-8.jpg" alt="" title="#slider-direction-2" />
+        </div>
+
+    </div>
+</div>
+<!-- slider area end -->
+<div class="another-product-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>BEST SELLER PRODUCTS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-content">
+                @Html.Action("BestSellerProduct", "Product")
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- products area end -->
+<!-- feature products area start -->
+<!-- feature products area end -->
+<div class="another-product-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>NEW PRODUCTS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-content">
+                @*<div class="related-slider">*@
+                    @Html.Action("NewProduct", "Product")
+                @*</div>*@
+            </div>
+        </div>
+
+@*<div class="new-products-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-title">
+                    <h2>Related products</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="related-slider">
+
+                @Html.Action("Related", "Product", new { @hang = Model.sanpham.HangSX })
+            </div>
+        </div>
+    </div>
+</div>*@
+ @*another banner area start*@ 
+<div class="another-banner-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="big-banner">
+                    <a href="#">
+                        <img width=1200 heigth=200 src="~/Content/img/Advertisement/ad4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- another banner area end -->
+<div class="another-product-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>SALE PRODUCTS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-content">
+                    @Html.Action("SaleProduct", "Product")
+
+            </div>
+    </div>
+</div>
